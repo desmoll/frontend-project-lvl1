@@ -1,4 +1,3 @@
-//startBrainCalcGame
 import getRandomInt from '../randomNumber.js';
 import readlineSync from 'readline-sync';
 
