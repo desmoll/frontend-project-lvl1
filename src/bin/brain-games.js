@@ -1,3 +1,3 @@
 #!/usr/bin/env node
-import yourName from '../index.js';
-yourName();
+import userGreeting from '../just_greeting.js';
+userGreeting();
