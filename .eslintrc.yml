@@ -3,6 +3,8 @@ env:
   browser: true
 plugins:
   - import
+extends:
+  - 'airbnb-base'
 rules:
     no-console: 0
     import/extensions: 0

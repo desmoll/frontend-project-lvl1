@@ -2,28 +2,28 @@ import getRandomInt from '../randomNumber.js';
 import userGreeting from '../index.js';
 
 const taskText = 'What is the result of the expression?';
-const getGameAssignments = () => {
-    const operations = ['+', '-', '*'];
-    let firstNumber = getRandomInt(1, 100);
-    let secondNumber = getRandomInt(1, 100);
-    let operationsRandom = operations[getRandomInt(1, 3) - 1];
-    let correctAnswer;
+const operations = ['+', '-', '*'];
+let correctAnswer;
 
-    switch(operationsRandom) {
-        case '+':
-        correctAnswer = firstNumber + secondNumber;
-        break;
-        case '-':
-        correctAnswer = firstNumber - secondNumber;
-        break;
-        case '*':
-        correctAnswer = firstNumber * secondNumber;
-        break;
-        default:
-        break;
-    }
-    const theTask  = `${firstNumber} ${operationsRandom} ${secondNumber}`;
-    const startBrainCalcGame = [theTask, correctAnswer];
-    return startBrainCalcGame;   
+const getGameAssignments = () => {
+  const firstNumber = getRandomInt(1, 100);
+  const secondNumber = getRandomInt(1, 100);
+  const operationsRandom = operations[getRandomInt(1, 3) - 1];
+  switch (operationsRandom) {
+    case '+':
+      correctAnswer = firstNumber + secondNumber;
+      break;
+    case '-':
+      correctAnswer = firstNumber - secondNumber;
+      break;
+    case '*':
+      correctAnswer = firstNumber * secondNumber;
+      break;
+    default:
+      break;
+  }
+  const question = `${firstNumber} ${operationsRandom} ${secondNumber}`;
+  const startBrainCalcGame = [question, correctAnswer];
+  return startBrainCalcGame;
 };
 export default () => userGreeting(getGameAssignments, taskText);
