@@ -1,6 +1,6 @@
 {
   "name": "desmoll-hexlet-project1",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "description": "frontend first project on hexlet",
   "type": "module",
   "main": "src/index.js",
