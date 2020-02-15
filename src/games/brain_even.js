@@ -1,12 +1,12 @@
-import getRandomInt from '../randomNumber.js';
+import getRandomInt from '../modules/randomNumber.js';
 import userGreeting from '../index.js';
+import isEven from '../modules/evenNumber.js';
 
-const taskText = 'Answer "yes" if the number is even, otherwise answer "no".';
-const getGameAssignments = () => {
-  const randomNumber = getRandomInt(1, 100);
-  const isEven = () => randomNumber % 2 === 0;
-  const question = randomNumber.toString();
-  const correctAnswer = isEven(randomNumber) ? 'yes' : 'no';
-  return [question, correctAnswer];
+const task = 'Answer "yes" if the number is even, otherwise answer "no".';
+const getGameData = () => {
+  const number = getRandomInt(1, 100);
+  const question = number.toString();
+  const correctAnswer = isEven(number) ? 'yes' : 'no';
+  return [question, correctAnswer.toString()];
 };
-export default () => userGreeting(getGameAssignments, taskText);
+export default () => userGreeting(getGameData, task);

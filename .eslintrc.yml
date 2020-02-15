@@ -1,6 +1,5 @@
 env:
   node: true
-  browser: true
 plugins:
   - import
 extends:
@@ -8,6 +7,3 @@ extends:
 rules:
     no-console: 0
     import/extensions: 0
-parserOptions:
-    sourceType: module
-    ecmaVersion: 2015

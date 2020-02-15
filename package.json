@@ -1,7 +1,12 @@
 {
   "name": "desmoll-hexlet-project1",
-  "version": "1.2.2",
+  "version": "1.2.4",
   "description": "frontend first project on hexlet",
+  "keywords": [
+    "first project",
+    "brain games",
+    "hexlet"
+  ],
   "type": "module",
   "main": "src/index.js",
   "scripts": {
