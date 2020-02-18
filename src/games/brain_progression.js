@@ -1,5 +1,5 @@
-import getRandomInt from '../modules/randomNumber.js';
-import userGreeting from '../index.js';
+import getRandomInt from '../utils.js';
+import run from '../index.js';
 
 const task = 'What number is missing in the progression?';
 const progressionLength = 10;
@@ -16,8 +16,7 @@ const getGameData = () => {
       question.push(startingNumber + progressionStep * i);
     }
   }
-  const startBrainProgressionGame = [question, correctAnswer.toString()];
-  return startBrainProgressionGame;
+  return [question.join(' '), correctAnswer.toString()];
 };
 
-export default () => userGreeting(getGameData, task);
+export default () => run(getGameData, task);
