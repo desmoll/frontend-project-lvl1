@@ -2,7 +2,7 @@ import getRandomInt from '../utils.js';
 import run from '../index.js';
 
 const task = 'What is the result of the expression?';
-const operations = ['+', '-', '*'];
+const operator = ['+', '-', '*'];
 const calculator = new Map([
   ['+', (a, b) => (a + b)],
   ['-', (a, b) => (a - b)],
@@ -11,10 +11,10 @@ const calculator = new Map([
 const getGameData = () => {
   const firstNumber = getRandomInt(1, 100);
   const secondNumber = getRandomInt(1, 100);
-  const operationsRandom = operations[getRandomInt(1, operations.length) - 1];
-  const calculate = calculator.get(operationsRandom);
+  const operatorRandom = operator[getRandomInt(1, operator.length) - 1];
+  const calculate = calculator.get(operatorRandom);
   const correctAnswer = calculate(firstNumber, secondNumber);
-  const question = `${firstNumber} ${operationsRandom} ${secondNumber}`;
+  const question = `${firstNumber} ${operatorRandom} ${secondNumber}`;
   return [question, correctAnswer.toString()];
 };
 
