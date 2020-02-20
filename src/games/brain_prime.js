@@ -13,7 +13,7 @@ const getGameData = () => {
   const randomNumber = getRandomInt(1, 500);
   const correctAnswer = isPrime(randomNumber) ? 'yes' : 'no';
   const question = randomNumber.toString();
-  return [question, correctAnswer.toString()];
+  return [question, correctAnswer];
 };
 
 export default () => run(getGameData, task);

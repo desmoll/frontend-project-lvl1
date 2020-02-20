@@ -11,7 +11,7 @@ const calculator = new Map([
 const getGameData = () => {
   const firstNumber = getRandomInt(1, 100);
   const secondNumber = getRandomInt(1, 100);
-  const operatorRandom = operators[getRandomInt(1, operators.length) - 1];
+  const operatorRandom = operators[getRandomInt(0, operators.length - 1)];
   const calculate = calculator.get(operatorRandom);
   const correctAnswer = calculate(firstNumber, secondNumber);
   const question = `${firstNumber} ${operatorRandom} ${secondNumber}`;
