@@ -3,7 +3,7 @@
 <a href="https://codeclimate.com/github/desmoll/frontend-project-lvl1/maintainability"><img src="https://api.codeclimate.com/v1/badges/63d71fe32226d7ca388e/maintainability" /></a>
 [![eslint](https://github.com/desmoll/frontend-project-lvl1/workflows/eslint/badge.svg)]
   (https://github.com/desmoll/frontend-project-lvl1/actions)
-
+<a href="https://github.com/desmoll/frontend-project-lvl1/actions"><img src="https://github.com/desmoll/frontend-project-lvl1/workflows/eslint/badge.svg" /></a>
 
 
 <h2>Игра: "Проверка на четность"</h2>
