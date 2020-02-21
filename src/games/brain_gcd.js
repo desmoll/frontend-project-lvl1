@@ -3,7 +3,6 @@ import run from '../index.js';
 
 const task = 'Find the greatest common divisor of given numbers. ';
 const getGCD = (firstNumber, secondNumber) => {
-  if (secondNumber > firstNumber) return getGCD(secondNumber, firstNumber);
   if (!secondNumber) return firstNumber;
   return getGCD(secondNumber, firstNumber % secondNumber);
 };

@@ -16,7 +16,7 @@ const getGameData = () => {
       question.push(startingNumber + progressionStep * i);
     }
   }
-  return [question.join(' '), correctAnswer.toString()];
+  return [question.join(' '), correctAnswer];
 };
 
 export default () => run(getGameData, task);
